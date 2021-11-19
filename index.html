@@ -1,0 +1,208 @@
+<html> 
+<head>
+    <title>HTML Tutorial</title>
+    <link type="text/css" rel="stylesheet" href="webtech_project_dtu.css" />
+	<style>
+    #trans:hover {
+        width: 150px; 
+        height:70px; 
+        background:black;
+        color:white;
+        }
+
+        /* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+        
+        
+            body{
+                background-color: white;
+            }
+            #trans {
+                color: rgb(0, 221, 74);
+            }
+            .theme-dark{
+                background-color: black;
+                color: white;
+            }
+        
+        </style>
+</head>  
+<body style="font-family: Franklin Gothic Medium; font-size: 15px;">
+    
+<div class="container-fluid"> 
+   <div class="row"> 
+       <div class="col-md-2 col-sm-12 col-xs-12"> 
+           <nav id="navbar"> 
+               <div id="trans"><h5 style="font-family: Franklin Gothic Medium;text-align:center;">By Dipanshu Chauhan (2k19/ME/084) & Hardik Goel (2k19/ME/094)</h5></div> 
+               <h1 style="font-family: Franklin Gothic Medium;">HTML Tutorial</h1>
+               <ul class="nav nav-pills nav-stacked"> 
+                <!--internal linking to the respective sections--> 
+                   <a class="nav-link" href="#Introduction" rel="internal"> 
+                       <li>Introduction</li> 
+                   </a> 
+                   <a class="nav-link" href="#What_you_should_already_know" rel="internal"> 
+                       <li>HTML Body</li> 
+                   </a> 
+                   <a class="nav-link" href="#About_Topic" rel="internal"> 
+                       <li>About the CSS</li> 
+                   </a> 
+                   <a class="nav-link" href="#Topic_1" rel="internal"> 
+                       <li>CSS Box Model</li> 
+                   </a> 
+                   <a class="nav-link" href="#Topic_2" rel="internal"> 
+                       <li>Display & Positioning in CSS</li> 
+                   </a> 
+                </ul> 
+           </nav> 
+       </div>
+       <br><div style="margin:10px;text-align: right;">Night Mode <button onclick="toggleTheme()"><img src="toggle theme icon.png" alt="toggle theme" style="width: 30px;height:30px;"></button></div> 
+       <div class="col-md-10 col-sm-12 col-xs-12"> 
+           <main id="main-doc"> 
+               <section class="main-section" id="Introduction" > 
+                <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers--> 
+                   <h3 style = "background: rgb(95, 20, 138); color: white">Introduction</h3> 
+                   <article> 
+                        <p>HTML is the foundation of all web pages. Without HTML, you wouldn’t be able to organize text or add images or videos to your web pages. HTML is the beginning of everything you need to know to create engaging web pages! HTML (HyperText Markup Language) is used to give content to a web page and instructs web browsers on how to structure that content. HTML is the skeleton of all web pages. It’s often the first language learned by developers, marketers, and designers and is core to front-end development work. HTML is composed of elements. These elements structure the webpage and define its content. Let’s take a look at how they’re written.
+                            <ul>
+                                <li>An opening tag (< p >)</li>
+                                <li>The content</li>
+                                <li>A closing tag (< /p >)</li>
+                            </ul>
+                        </p>
+                         
+                   </article> 
+               </section> 
+               <section class="main-section" id="What_you_should_already_know"> 
+                   <h3 style = "background:rgb(95, 20, 138); color: white">The Body</h3> 
+                   <article> 
+                       <p>One of the key HTML elements we use to build a webpage is the body element. Only content inside the opening and closing body tags can be displayed to the screen. Here’s what opening and closing body tags look like:<br>
+                        <br>
+                        < body >
+                        <br><br> 
+                        < /body ><br><br>
+                        Once the file has a body, many different types of content – including text, images, and buttons – can be added to the body.<br><br>
+                        
+                        < body ><br>
+                          < p > What's up, doc? < /p ><br>
+                        < /body >< /p ><br><br> 
+<!--creating list using html--> 
+                        The following is the list of heading elements available in HTML. They are ordered from largest to smallest in size. 
+                       <li>< h1 > - used for main headings. All other smaller headings are used for subheadings.</li> 
+                       <li>< h2 ></li>
+                       <li>< h3 ></li>
+                       <li>< h4 ></li>
+                       <li>< h5 ></li>
+                       <li>< h6 ></li> 
+                       <br><p><b><u>Divs</u></b> - One of the most popular elements in HTML is the < div > element. < div > is short for “division” or a container that divides the page into sections. These sections are very useful for grouping elements in your HTML together.</p> 
+                        <br><p><b><u>Attributes</u></b> - If we want to expand an element’s tag, we can do so using an attribute. Attributes are content added to the opening tag of an element and can be used in several different ways, from providing information to changing styling. Attributes are made up of the following two parts:</p>
+
+                            <li>The name of the attribute</li>
+                            <li>The value of the attribute</li>
+                            <p>One commonly used attribute is the id. We can use the id attribute to specify different content (such as < div >s) and is really helpful when you use an element more than once.</p> 
+                       </artice> 
+               </section> 
+               <section class="main-section" id="About_Topic"> 
+                   <h3 style = "background:rgb(95, 20, 138); color: white">CSS - Introduction</h3> 
+                   <article> 
+                       <p>While HTML is the fundamental structure of every web page, it can be visually unappealing on its own. Cascading Style Sheets or CSS is a language web developers use to style the HTML content on a web page. If you’re interested in modifying colors, font types, font sizes, images, element positioning, and more, CSS is the tool for the job!</p> 
+                       <p><b>Pre-requisites </b>: We recommend that you complete Learn HTML before learning CSS.</p> 
+                       <p>A CSS selector selects the HTML element(s) you want to style. We can divide CSS selectors into five categories:</p>
+
+                        <li>Simple selectors (select elements based on name, id, class)</li>
+                        <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                        <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                        <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                        <li>Attribute selectors (select elements based on an attribute or attribute value)</li> 
+                   </article> 
+               </section> 
+               <section class="main-section" id="Topic_1"> 
+                   <h3 style = "background:rgb(95, 20, 138); color: white">Box Model in CSS</h3> 
+                <article> 
+                    Browsers load HTML elements with default position values. This often leads to an unexpected and unwanted user experience while limiting the views you can create. In this lesson, you will learn about the box model, an important concept to understand how elements are positioned and displayed on a website. If you have used HTML and CSS, you have unknowingly seen aspects of the box model. For example, if you have set the background color of an element, you may have noticed that the color was applied not only to the area directly behind the element but also to the area to the right of the element. Also, if you have aligned text, you know it is aligned relative to something. What is that something? 
+                    All elements on a web page are interpreted by the browser as “living” inside of a box. This is what is meant by the box model. For example, when you change the background color of an element, you change the background color of its entire box. In this lesson, the following are the aspects of the box model:
+                    <ol>
+                        <li>The dimensions of an element’s box (width, height).</li>
+                        <li>The borders of an element’s box. </li>
+                        <li>The paddings of an element’s box.</li>
+                        <li>The margins of an element’s box. </li>
+                        <li>Overflow case.</li>
+                    </ol>
+                </article> 
+               </section> 
+               <section class="main-section" id="Topic_2"> 
+                   <h3 style = "background:rgb(95, 20, 138); color: white">Display & Positioning</h3> 
+                   <p> 
+                        A browser will render the elements of an HTML document that has no CSS from left to right, top to bottom, in the same order as they exist in the document. This is called the flow of elements in HTML. In addition to the properties that it provides to style HTML elements, CSS includes properties that change how a browser positions elements. These properties specify where an element is located on a page, if the element can share lines with other elements, and other related attributes. Five properties for adjusting the position of HTML elements in the browser:
+                   </p>
+                   <ul>
+                       <li>position</li>
+                       <li>display</li>
+                       <li>z-index</li>
+                       <li>float</li>
+                       <li>clear</li>
+                   </ul> 
+               </section> <br>
+               To dig more deep into this go to these  
+               <div class="dropdown">
+                <button class="dropbtn">Resources</button>
+                <div class="dropdown-content">
+                  <a href="https://html.com/">HTML 1</a>
+                  <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">HTML 2</a>
+                  <a href="https://www.javatpoint.com/css-tutorial">CSS 1</a>
+                </div>
+              </div>
+               <br><br><br>
+	            <p style="color: rgb(168, 161, 161);">
+                  <center> While using this source, you agree to have read and accepted our terms of use, cookie and privacy policy.<br>Copyright © 2021 by DCHD. All Rights Reserved.</center>
+                </p>
+	<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnJS8nFg51U9qPSOTocx00iBbgLOwV82XNA&usqp=CAU" alt="mylogo" width="100px" height="140px" /> </center><br><br>
+           </main> 
+       </div> 
+   </div> 
+</div>
+    <script>
+         function toggleTheme(){
+            document.body.classList.toggle("theme-dark");
+            }
+    </script>
+</body> 
+</html> 
